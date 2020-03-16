@@ -1,6 +1,6 @@
 # Async Runtimes Comparison
 
-Benchmarks for async_std, tokio and futures runtimes in comparison with syncronous versions.
+Benchmarks for async_std, tokio and futures runtimes in comparison with synchronous versions.
 
 ## How to run
 
