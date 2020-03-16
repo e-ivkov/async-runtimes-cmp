@@ -1,0 +1,30 @@
+[package]
+name = "async-runtimes-cmp"
+version = "0.1.0"
+authors = ["Egor Ivkov <e.o.ivkov@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[dev-dependencies]
+bencher = "0.1.5"
+tempfile = "3"
+rand = "0.7.3"
+
+[dev-dependencies.tokio]
+tokio = "0.2.13"
+features = ["fs", "macros"]
+
+[dev-dependencies.futures]
+version = "0.3.4"
+features = ["thread-pool"]
+
+[dev-dependencies.async-std]
+version = "1.5.0"
+features = ["attributes"]
+
+[[bench]]
+name = "tests"
+harness = false
